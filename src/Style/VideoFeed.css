@@ -1,0 +1,332 @@
+.videoFeed{
+    display: flex;
+}
+
+.scrollPage {
+    width: 65%;
+    height: 100vh; /* This could be 100vh if you want it to take the full viewport height */
+    /* Add other styles like padding, background color, etc., as per your design */
+    background-color: #ECECEC;
+    position: sticky; /* This is required for absolute positioning of children */
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center children vertically */
+    justify-content: flex-end; /* Align children with space between */
+
+  }
+
+  .videoFrame{
+    width: 50%; /* Or whatever width you prefer */
+    height: 100vh; /* Or whatever height you prefer, vh for viewport height */
+    margin: auto; /* This centers the div horizontally */
+    position: relative; /* Use absolute positioning within the scrollPage */
+    background-color: black;
+    display: flex; /* Using flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.videoFrame img {
+  max-width: 100%; /* To ensure it does not overflow from the videoFrame */
+  max-height: 100vh; /* To ensure it does not overflow from the videoFrame's height */
+  object-fit: contain; /* To ensure the aspect ratio is maintained */
+}
+
+  .up-and-down-icons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 21%; /* Default small right margin */
+  }
+
+  @media (max-width: 1800px) {
+    .up-and-down-icons {
+      right: 19%; /* Slightly larger margin for medium screens */
+    }
+  }
+
+
+
+  @media (max-width: 1200px) {
+    .up-and-down-icons {
+      right: 18%; /* Slightly larger margin for medium screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .up-and-down-icons {
+      right: 17%; /* Even larger margin for small screens */
+    }
+  }
+  
+  
+ 
+  .up-and-down-icons img {
+    width: 40px; /* Set the width as desired */
+    height: 40px; /* Set the height as desired */
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .up-and-down-icons{
+      display: none;
+    }
+
+  }
+
+  /* @media (min-width: 769px) and (max-width: 1024px) {
+    .up-and-down-icons{
+      margin-right: 80px;
+    }
+  } */
+
+
+.eventDetails {
+    width: 35%;
+    height: 200vh; /* This could be 100vh if you want it to take the full viewport height */
+    overflow-y: auto; /* This makes the div scrollable */
+    background-color: #F5F5F5;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .eventDetailss {
+    width: 100%;
+    height: 200vh; /* This could be 100vh if you want it to take the full viewport height */
+    overflow-y: auto; /* This makes the div scrollable */
+    background-color: #F5F5F5;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  
+  /* .eventDetails {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } */
+
+
+  
+ 
+  
+  .eventInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    align-items: center;
+  }
+
+ 
+  .infoBlock {
+    align-items: center; /* This will vertically center the text with the image */
+    margin-bottom: 10px; /* Add space between the info blocks if needed */
+  }
+  
+  .infoBlock p {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    
+  }
+  .infoBlock img{
+    margin-right: 5px;
+    
+  }
+
+  .locationSection img {
+    margin-right: 5px;
+  }
+
+
+  .iconAndText{
+    display: flex;
+    align-items: center; /* This will vertically center the text with the image */
+    justify-content: flex-start; /* This will align the items to the start of the block */
+  }
+ 
+  .inviteButton {
+    background: #000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: block; /* makes the button occupy the full width */
+    margin-bottom: 10px;
+    border-radius: 7px;
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+  }
+  
+  /* Rest of the CSS for centering the text and additional styling */
+  .eventDetails h1, .eventDetailss h1 {
+    text-align: center;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .aboutSection, .locationSection {
+    text-align: center;
+  }
+  
+  .aboutSection p, .locationSection p {
+    text-align: left;
+  } 
+
+  .aboutSection p{
+    color: rgba(0, 0, 0, 0.59);
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 17px; /* 175% */
+    letter-spacing: 0.9px;
+  }
+
+  .locationSection p{
+    color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+  }
+  .eventDetails h2, .eventDetailss h2 {
+    text-align: left;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .map{
+    border-radius: 7px;
+    overflow: hidden; /* This is important */
+    width: 100%;
+    height: 170px;
+    background-color: aquamarine;
+  }
+
+
+
+  .video-content h1{
+    color: #ECECEC;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .video-content p{
+    color: #ECECEC;
+  }
+
+  @media (min-width: 768px){
+    .video-content{
+      display: none;
+    }
+  }
+
+
+
+
+
+@media (max-width: 768px) {
+  
+  .scrollPage {
+    width: 100%;
+    min-height: 100%; /* 100% of the viewport height */
+    position: relative; /* Establishes a positioning context for .video-content */
+    background-color: #c31919;
+  }
+  
+  /* Adjust .videoFrame so it doesn't cause scrolling */
+  .videoFrame {
+    width: 100%;
+    /* Make .videoFrame take up all available space except for the height of .video-content */
+    height: 100vh; /* Adjust 120px to the height of your .video-content */
+    overflow: hidden; /* Prevent scrolling within .videoFrame */
+  }
+  
+  /* Set .video-content to be fixed at the bottom */
+  .video-content {
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 0; /* Aligns to the bottom of the screen */
+    left: 0; /* Aligns to the left of the screen */
+    width: 100%; /* Full width of the screen */
+    padding: 15px;
+  }
+  
+  /* Hide .eventDetails as you have already done */
+  .eventDetails {
+    display: none;
+  }
+  
+  
+}
+
+
+/* @media (max-width: 768px) {
+  .eventDetailss{
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .eventDetailss {
+    width: 800px; 
+  }
+} */
+
+/* @media (min-width: 768px) {
+  .scrollPage, .eventDetails {
+    display: block;
+  
+  }
+}
+
+@media (max-width: 767px) {
+  .scrollPage, .eventDetails {
+    display: block;
+    width: 100%;
+  }
+} */
+
+.icon-and-text{
+  display: flex;
+}
+.openItenary{
+  color: #204b12;
+    font-family: sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+
+}
+

@@ -1,0 +1,123 @@
+.verificationFormContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f5f5f5; /* Your desired background color */
+  }
+
+  .verificationForm{
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Maximum width of the form */
+  }
+  
+  .verificationForm h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .verificationForm p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.53);
+    font-family:sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    display: block;
+  }
+  .resendButton{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+
+  }
+  
+  .inputContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .codeBox {
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.05);
+
+
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .resend {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  
+  .resendButton {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  
+  .verifyButton {
+    width: 100%;
+    padding: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+  }
+  
+  .verifyButton:hover {
+    background-color: #333;
+  }
+
+
+
+  @media (max-width: 768px){
+    .verificationFormContainer{
+      background-color: #ffffff; /* Your desired background color */
+    }
+  }
+
+  @media (max-width: 768px){
+    .verificationForm {
+      background: #ffffff;
+      box-shadow: none;
+    }
+  }

@@ -1,0 +1,162 @@
+.phoneFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f5f5f5; /* Your desired background color */
+  }
+  
+  .phoneForm {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Maximum width of the form */
+  }
+  
+  .phoneForm h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .countryBox {
+    flex-shrink: 0;
+    border-radius: 7px 7px 0px 0px;
+    background: rgba(0, 0, 0, 0.05);
+    margin-bottom: 4px;
+  }
+
+  .regionLabel{
+    color: rgba(0, 0, 0, 0.53);
+    font-family:sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    padding: 10px 10px 0 10px;
+    margin: 0;
+  }
+  .countryInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 10px;
+    margin-top: 0;
+  }
+  
+  .flagIcon {
+    width: 25px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .countryLabel {
+    font-size: 14px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.76);
+ 
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .phoneNumberInput {
+    padding: 20px;
+    border: 0px solid #ccc;
+    flex-shrink: 0;
+    border-radius: 0px 0px 7px 7px;
+    background: rgba(0, 0, 0, 0.05);
+
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+  }
+  
+  .termsContainer {
+    margin-bottom: 20px;
+  }
+
+
+  .check{
+    display: flex;
+    align-items: center;
+    margin: 25px 0 25px 0;
+  }
+
+  .termsContainer input{
+    margin-left: 0;
+  }
+  
+  .termsContainer label {
+    color: rgba(0, 0, 0, 0.53);
+    font-family:sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    display: block;
+    margin-left: 5px;
+
+  }
+  
+  .termsContainer a {
+    color: #007bff;
+    text-decoration: none;
+    font-family:sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+  }
+  
+  .termsContainer a:hover {
+    text-decoration: underline;
+  }
+  
+  .continueButton {
+    width: 100%;
+    padding: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+  }
+  
+  .continueButton:hover {
+    background-color: #333;
+  }
+
+
+  .inputWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px){
+    .phoneFormContainer {
+      background-color: #ffffff; /* Your desired background color */
+    }
+  }
+
+  @media (max-width: 768px){
+    .phoneForm {
+      background: #ffffff;
+      box-shadow: none;
+    }
+  }
